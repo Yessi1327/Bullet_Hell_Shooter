@@ -25,6 +25,10 @@ public class BulletPool : MonoBehaviour
     //Lista de las balas clonadas
     private List<BulletY> _bulletPool = new List<BulletY>();
 
+    //Contador  de balas activas, cualquier script puede acceder a este valor
+    public int ActiveBullets { get; private set; } = 0;
+
+
     //Instancia una sola Bullet Pool 
     void Awake()
     {
@@ -51,9 +55,9 @@ public class BulletPool : MonoBehaviour
             //Es importante poner transforme, false para evitar 
             //Que BulletY se transforme ya que es un onjeto UI
             BulletY bullet = Instantiate(_bulletPrefabY, transform, false);
-            bullet.gameObject.SetActive(false); 
-            _bulletPool.Add(bullet); 
-           // bullet.transform.parent = transform;
+            bullet.gameObject.SetActive(false);
+            _bulletPool.Add(bullet);
+            // bullet.transform.parent = transform;
         }
     }
 
@@ -66,6 +70,7 @@ public class BulletPool : MonoBehaviour
             if (!_bulletPool[i].gameObject.activeSelf)
             {
                 _bulletPool[i].gameObject.SetActive(true);
+                ActiveBullets++; //Suma al contador
                 return _bulletPool[i];
             }
         }
@@ -74,6 +79,14 @@ public class BulletPool : MonoBehaviour
         //Esto de ser requerido si se baja el espacio de espameo entre balas
         AddBulletsToPool(1);
         _bulletPool[_bulletPool.Count - 1].gameObject.SetActive(true);
+        ActiveBullets++; // Suma al activar
         return _bulletPool[_bulletPool.Count - 1];
     }
+    
+    // Llamado por la bala cuando se apaga
+    public void DiscountBullets()
+    {
+        ActiveBullets--; // Restar al desactivar
+    }
+
 }

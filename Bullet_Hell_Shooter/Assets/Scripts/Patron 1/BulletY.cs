@@ -38,8 +38,13 @@ public class BulletY : MonoBehaviour
     private void Disable()
     {
         timeToMove = 0;
+        // Notifica al pool que una bala se desactiva
+        if (BulletPool.Instance != null)
+        {
+            BulletPool.Instance.DiscountBullets();
+        }
+
         gameObject.SetActive(false);
         //Destroy(gameObject);
     }
-
 }
