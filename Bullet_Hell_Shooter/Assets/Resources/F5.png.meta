@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -2195613213959225752
     second: F5_0
+  - first:
+      213: -7810666184094405524
+    second: F5_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,9 +107,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 188
-        height: 208
+        y: 15
+        width: 104
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +120,28 @@ TextureImporter:
       bones: []
       spriteID: 86e7ecd2a6d9781e0800000000000000
       internalID: -2195613213959225752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F5_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 214
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ca5edfc70fa9390800000000000000
+      internalID: -7810666184094405524
       vertices: []
       indices: 
       edges: []
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F5_0: -2195613213959225752
+      F5_1: -7810666184094405524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

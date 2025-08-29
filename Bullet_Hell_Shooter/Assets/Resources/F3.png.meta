@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: -7188120966563113533
     second: F3_0
+  - first:
+      213: -9222943221426480003
+    second: F3_1
+  - first:
+      213: -9125475836404426509
+    second: F3_2
+  - first:
+      213: -1101790227183738473
+    second: F3_3
+  - first:
+      213: -115306275409190214
+    second: F3_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +115,10 @@ TextureImporter:
       name: F3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 97
-        height: 194
+        x: 19
+        y: 174
+        width: 22
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +129,94 @@ TextureImporter:
       bones: []
       spriteID: 3c5d771b01aae3c90800000000000000
       internalID: -7188120966563113533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 127
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c174f5106810080800000000000000
+      internalID: -9222943221426480003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 200
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f814bc531ccb5180800000000000000
+      internalID: -9125475836404426509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 63
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79167bb30a7a5b0f0800000000000000
+      internalID: -1101790227183738473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F3_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 10
+        width: 95
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2acddad89566ef0800000000000000
+      internalID: -115306275409190214
       vertices: []
       indices: 
       edges: []
@@ -136,6 +236,10 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       F3_0: -7188120966563113533
+      F3_1: -9222943221426480003
+      F3_2: -9125475836404426509
+      F3_3: -1101790227183738473
+      F3_4: -115306275409190214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

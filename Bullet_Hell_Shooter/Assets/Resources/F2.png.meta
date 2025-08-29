@@ -103,10 +103,10 @@ TextureImporter:
       name: F2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 138
-        height: 268
+        x: 13
+        y: 21
+        width: 115
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
