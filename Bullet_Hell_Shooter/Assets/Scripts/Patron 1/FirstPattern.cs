@@ -21,18 +21,16 @@ public class FirstPatterns : MonoBehaviour
     void OnEnable()
     {
         // Arranca el loop del patrón cuando el objeto se activa
+        if (loop == null) // evita arrancar dos veces
+        {
         loop = StartCoroutine(FireLoop());
+        }                    
     }
 
     void OnDisable()
     {
         // Detiene el loop si el objeto se desactiva
         if (loop != null) StopCoroutine(loop);
-    }
-
-    void Start()
-    {
-        loop = StartCoroutine(FireLoop());
     }
 
     IEnumerator FireLoop()

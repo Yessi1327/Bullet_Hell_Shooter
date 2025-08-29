@@ -5,7 +5,7 @@ public class BulletY : MonoBehaviour
 {
 
     //Vida maxima que tendra la bala
-    private const float MaxLife = 5f;
+    private const float MaxLife = 3f;
 
     //Contador de tiempo de vida
     private float timeToMove = 0f;

@@ -9,11 +9,11 @@ public class BulletsCountUI : MonoBehaviour
     {
         if (BulletPool.Instance != null)
         {
-            counterText.text = $"Bullets Boss: {BulletPool.Instance.ActiveBullets}";
+            counterText.text = $"Boss Bullets: {BulletPool.Instance.ActiveBullets}";
         }
         else
         {
-            counterText.text = "Bullets Boss: 0";
+            counterText.text = "Boss Bullets: 0";
         }
     }
 }
