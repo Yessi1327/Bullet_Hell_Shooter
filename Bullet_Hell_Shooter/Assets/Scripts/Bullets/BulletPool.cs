@@ -39,12 +39,12 @@ public class BulletPool : MonoBehaviour
 
     void AddBulletsToPool(int x)
     {
-        for (int i = 0; i > x; i++)
+        for (int i = 0; i < x; i++)
         {
-            BulletY bullet = Instantiate(_bulletPrefabY);
+            BulletY bullet = Instantiate(_bulletPrefabY, transform, false);
             bullet.gameObject.SetActive(false);
             _bulletPool.Add(bullet);
-            bullet.transform.parent = transform;
+           // bullet.transform.parent = transform;
         }
     }
 

@@ -3,7 +3,7 @@ using UnityEngine;
 public class BulletY : MonoBehaviour
 {
 
-    private const float MaxLife = 4f;
+    private const float MaxLife = 5f;
     private float timeToMove = 0f;
 
 
@@ -17,7 +17,7 @@ public class BulletY : MonoBehaviour
 
     void Update()
     {
-        transform.position += (Vector3)Velocity * Time.deltaTime;
+        transform.position += (Vector3)Velocity * -Time.deltaTime;
         timeToMove += Time.deltaTime;
 
         if (timeToMove > MaxLife)
@@ -27,7 +27,8 @@ public class BulletY : MonoBehaviour
     private void Disable()
     {
         timeToMove = 0;
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 
 }
