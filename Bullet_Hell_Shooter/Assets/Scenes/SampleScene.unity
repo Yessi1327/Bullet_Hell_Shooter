@@ -266,6 +266,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefabY: {fileID: 1407742417}
   _initialPoolSize: 20
+--- !u!1 &187702697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187702698}
+  m_Layer: 0
+  m_Name: Patron 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &187702698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187702697}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -55, z: -0.99996346}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2015502011}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &196760781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -950,52 +981,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1301185343
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1301185344}
-  - component: {fileID: 1301185345}
-  m_Layer: 0
-  m_Name: BulletPool2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1301185344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301185343}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1883440125}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1301185345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301185343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70936fa19b09c1d42948782fe3568b47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefabY: {fileID: 1407742417}
-  _initialPoolSize: 20
 --- !u!1 &1366171032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,7 +1488,6 @@ RectTransform:
   - {fileID: 1407742420}
   - {fileID: 1578929791}
   - {fileID: 20395432}
-  - {fileID: 1301185344}
   - {fileID: 2015502011}
   - {fileID: 1188954048}
   - {fileID: 2117894861}
@@ -1761,6 +1745,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2425761110110230444, guid: c7a48295a57c2764bb53e181246b03af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063608288}
+    - targetCorrespondingSourceObject: {fileID: 2425761110110230444, guid: c7a48295a57c2764bb53e181246b03af, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 187702698}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a48295a57c2764bb53e181246b03af, type: 3}
 --- !u!1660057539 &9223372036854775807
