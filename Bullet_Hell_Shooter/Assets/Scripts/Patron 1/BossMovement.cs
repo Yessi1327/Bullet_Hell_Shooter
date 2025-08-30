@@ -17,22 +17,22 @@ public class BossMovement : MonoBehaviour
     //Estará validando que cada 15 segundos se mueva
     private void TimeCheck()
     {
-        if (TimeManager.Minute == 4)
+        if (TimeManager.Minute == 5)
         {
             StartCoroutine(MoveBoss());
         }
 
-        else if (TimeManager.Minute == 10)
+        else if (TimeManager.Minute == 15)
         {
             StartCoroutine(MoveBoss1());
         }
 
-        else if (TimeManager.Minute  == 15)
+        else if (TimeManager.Minute  == 25)
         {
             StartCoroutine(MoveBoss2());
         }
 
-        else if (TimeManager.Minute == 20)
+        else if (TimeManager.Minute == 35)
         {
             StartCoroutine(MoveBoss3());
         }
@@ -43,8 +43,8 @@ public class BossMovement : MonoBehaviour
     //Actualizará nuestro cuadrado de posición
     private IEnumerator MoveBoss()
     {
-        transform.position = new Vector3(0f, 10f, 0);
-        Vector3 targetPos = new Vector3(10f, -5f, 0);
+        transform.position = new Vector3(0f, 7f, 0);
+        Vector3 targetPos = new Vector3(10f, 0f, 0);
 
         Vector3 currentPos = transform.position;
 
@@ -62,8 +62,8 @@ public class BossMovement : MonoBehaviour
 
     private IEnumerator MoveBoss1()
     {
-        transform.position = new Vector3(10f, -5f, 0);
-        Vector3 targetPos = new Vector3(0f, 10f, 0);
+        transform.position = new Vector3(10f, 0f, 0);
+        Vector3 targetPos = new Vector3(0f, 7f, 0);
 
         Vector3 currentPos = transform.position;
 
@@ -82,8 +82,8 @@ public class BossMovement : MonoBehaviour
     
     private IEnumerator MoveBoss2()
     {
-        transform.position = new Vector3(0f, 10f, 0);
-        Vector3 targetPos = new Vector3(-10f, -5f, 0);
+        transform.position = new Vector3(0f, 7f, 0);
+        Vector3 targetPos = new Vector3(-10f, 0f, 0);
 
         Vector3 currentPos = transform.position;
 
@@ -101,8 +101,8 @@ public class BossMovement : MonoBehaviour
 
     private IEnumerator MoveBoss3()
     {
-        transform.position = new Vector3(-10f, -5f, 0);
-        Vector3 targetPos = new Vector3(0f, 10f, 0);
+        transform.position = new Vector3(-10f, 0f, 0);
+        Vector3 targetPos = new Vector3(0f, 7f, 0);
 
         Vector3 currentPos = transform.position;
 
